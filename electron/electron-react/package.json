@@ -1,0 +1,39 @@
+{
+  "name": "electron-react",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "homepage": ".",
+  "scripts": {
+    "build": "react-scripts build",
+    "build:electron": "run-s build electron",
+    "electron": "electron .",
+    "start": "react-scripts start",
+    "start:electron": "ELECTRON_START_URL='http://localhost:3000' run-p start electron",
+    "test": "react-scripts test"
+  },
+  "dependencies": {
+    "electron": "^7.0.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "react-scripts": "3.2.0",
+    "yarn-run-all": "^3.1.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

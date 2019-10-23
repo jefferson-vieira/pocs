@@ -12,7 +12,7 @@ app.use((req, res, next) => {
 
 app.use((err, req, res, next) => {
   log.error(err.stack);
-  res.status(500).send('Something broke!');
+  res.status(500).send('Something broke!')
 });
 
 app.listen(PORT, () => {
