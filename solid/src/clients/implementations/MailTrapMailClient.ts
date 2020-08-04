@@ -5,11 +5,11 @@ import IMailClient, { IMail } from '../IMailClient';
 class MailTrapMailClient implements IMailClient {
   constructor(
     private transporter = nodemailer.createTransport({
-      host: 'smtp.mailtrap.io',
-      port: 2525,
+      host: process.env.MAIL_TRAP_HOST,
+      port: process.env.MAIL_TRAP_PORT,
       auth: {
-        user: 'cbd61a1b4075b9',
-        pass: 'f3c9d5fb8004f4',
+        user: process.env.MAIL_TRAP_USER,
+        pass: process.env.MAIL_TRAP_PASS,
       },
     })
   ) {}
