@@ -1,0 +1,29 @@
+{
+  "name": "@monorepo/client",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "@monorepo/axios-config": "*",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@monorepo/babel-preset-monorepo": "*",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.1",
+    "@types/react": "^16.9.44",
+    "@types/react-dom": "^16.9.8",
+    "babel-loader": "^8.1.0",
+    "core-js": "^3.6.5",
+    "html-webpack-plugin": "^4.3.0",
+    "react-refresh": "^0.8.3",
+    "react-test-renderer": "^16.13.1",
+    "regenerator-runtime": "^0.13.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

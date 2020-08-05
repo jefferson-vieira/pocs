@@ -1,0 +1,22 @@
+{
+  "name": "monorepo",
+  "version": "0.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "packages/shared/*"
+    ]
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@monorepo/babel-preset-monorepo": "*",
+    "@monorepo/eslint-config": "*",
+    "@monorepo/jest-config": "*",
+    "typescript": "^3.9.7"
+  }
+}

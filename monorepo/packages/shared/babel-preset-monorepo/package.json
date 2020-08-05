@@ -1,0 +1,22 @@
+{
+  "name": "@monorepo/babel-preset-monorepo",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.10.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "core-js": "^3.6.5",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "peerDependencies": {
+    "babel-loader": "^8.1.0",
+    "core-js": "^3.6.5",
+    "regenerator-runtime": "^0.13.7"
+  }
+}
