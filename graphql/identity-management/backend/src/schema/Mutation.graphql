@@ -1,0 +1,9 @@
+type Mutation {
+  createUser(data: CreateUserInput!): User!
+  editUser(data: UserInput!, filter: UserFilter!): User
+  deleteUser(filter: UserFilter!): User
+
+  createRole(data: RoleInput!): Role!
+  editRole(data: RoleInput!, filter: RoleFilter!): Role
+  deleteRole(filter: RoleFilter!): Role
+}

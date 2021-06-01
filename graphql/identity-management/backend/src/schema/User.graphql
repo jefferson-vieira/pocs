@@ -1,0 +1,26 @@
+# import Role from 'Role.graphql'
+
+type User {
+  id: Int!
+  name: String!
+  email: String!
+  roles: [Role!]!
+}
+
+input CreateUserInput {
+  name: String!
+  email: String!
+  password: String!
+}
+
+input UserInput {
+  name: String!
+  email: String!
+  password: String!
+  roles: [RoleInput]
+}
+
+input UserFilter {
+  id: Int
+  email: String
+}
