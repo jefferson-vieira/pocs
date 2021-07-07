@@ -1,0 +1,11 @@
+{
+  "name": "@monorepo/jest-config",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.8",
+    "jest": "^26.2.2",
+    "ts-jest": "^26.1.4"
+  }
+}
